@@ -1,0 +1,110 @@
+.weather{
+    width: 50%;
+    margin: auto;
+    background: linear-gradient(180deg, rgb(48, 48, 176), rgb(181, 27, 181));
+    border-radius: 25px;
+    height: fit-content;
+    padding: 20px 10px;
+}
+
+.search_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_bar div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: fit-content;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 70%;
+}
+.search_bar input{
+    background: white;
+    color: rgb(91, 91, 91);
+    width: 85%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+.search_btn{
+    border: none;
+    width: 15%;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    padding-top: 5px;
+    cursor: pointer;
+}
+.search_btn img{
+    width: fit-content;
+}
+
+.humidity_windSpeed{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather_temp{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.weather_location{
+    font-size: 30px;
+}
+
+.humidity_windSpeed img{
+    width: 50px;
+}
+.humidity_windSpeed p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media screen and (max-width :800px) {
+    .weather_temp{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .weather_location{
+        font-size: 20px;
+    }
+    .humidity_windSpeed img{
+        width: 40px;
+    }
+    .weather_icon img {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width :650px) {
+    .weather{
+        width: 95%;
+    }
+    .search_bar div{
+        width: 90%;
+
+    }
+}
+
+@media screen and (max-width :450px){
+    .weather_icon img {
+        width: 120px;
+    }
+    .humidity_windSpeed{
+        width: 90%;
+    }
+    .humidity_windSpeed p{
+        font-size: 14px;
+    }
+    .humidity_windSpeed img{
+        width: 30px;
+    }
+}
